@@ -4,6 +4,6 @@ cache e outros melhorias de segurança e perfomace.
 Instalação do ambiente.
 
 Comandos:
-sudo mkdir /opt/backend_swag (criar diretorio)
-sudo chown ejborge:ejborge /opt/backend_swag (trocar dono do diretorio recem criado)
-Não esquecer de adicionar o usuario que usará o docker e o servidor no grupo "docker e sudo.
+<p>sudo mkdir /opt/backend_swag (criar diretorio)</p>
+<p>sudo chown ejborge:ejborge /opt/backend_swag (trocar dono do diretorio recem criado)</p>
+<p>Não esquecer de adicionar o usuario que usará o docker e o servidor no grupo "docker e sudo.</p>
