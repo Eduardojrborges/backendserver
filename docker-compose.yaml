@@ -5,15 +5,15 @@ services:
     image: linuxserver/mariadb
     container_name: mariadb
     environment:
-      - PUID=1001
-      - PGID=1001
+      - PUID=1001 #trocar pelo id do usuario
+      - PGID=1001 #trocar pelo id do grupo de usuario
       - MYSQL_ROOT_PASSWORD=mariadbpassword
       - TZ=Europe/Berlin
       - MYSQL_DATABASE=WP_database
       - MYSQL_USER=WP_dbuser
       - MYSQL_PASSWORD=WP_dbpassword
     volumes:
-      - /opt/webserver_swag/config/mariadb:/config
+      - /opt/backend_swag/config/mariadb:/config
     restart: unless-stopped
 
   swag:
@@ -22,14 +22,14 @@ services:
     cap_add:
       - NET_ADMIN
     environment:
-      - PUID=1001
-      - PGID=1001
+      - PUID=1001 #trocar pelo id do usuario
+      - PGID=1001 #trocar pelo id do grupo de usuario
       - TZ=Europe/Berlin
-      - URL=do-test-1.the-digital-life.com
-      - SUBDOMAINS=
+      - URL=exemplo.com
+      - SUBDOMAINS=www
       - VALIDATION=http
     volumes:
-      - /opt/webserver_swag/config:/config
+      - /opt/backend_swag/config:/config
     ports:
       - 443:443
       - 80:80 #optional
