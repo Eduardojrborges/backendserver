@@ -24,7 +24,7 @@ services:
     environment:
       - PUID=1001 #trocar pelo id do usuario
       - PGID=1001 #trocar pelo id do grupo de usuario
-      - TZ=Europe/Berlin
+      - TZ=America/Sao_Paulo
       - URL=exemplo.com
       - SUBDOMAINS=www
       - VALIDATION=http
